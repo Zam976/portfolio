@@ -48,4 +48,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.querySelectorAll('.toggle-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const fullText = button.previousElementSibling;
+        const shortText = fullText.previousElementSibling;
 
+        if (fullText.classList.contains('hidden')) {
+            fullText.classList.remove('hidden');
+            button.textContent = "Moins de détails";
+        } else {
+            fullText.classList.add('hidden');
+            button.textContent = "Plus de détails";
+        }
+    });
+});
