@@ -50,6 +50,26 @@ header nav ul li a:active {
 }
 
 /* Container */
+
+/* CSS */
+/* Conteneur pour le texte dynamique */
+/* Conteneur pour le texte dynamique */
+#dynamic-text-container {
+    display: flex; 
+    justify-content: left; 
+    align-items: center;
+    position: relative; 
+    padding-top: 20px;
+}
+
+/* Style du texte dynamique */
+#dynamic-text {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    position: relative;
+    white-space: nowrap; /* Empêche le texte de se diviser en plusieurs lignes */
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
