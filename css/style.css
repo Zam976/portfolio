@@ -1,48 +1,40 @@
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Ubuntu', sans-serif;
     background-color: #1F2039;
     color: #FFFFFF;
     line-height: 1.6;
 }
-
 /* Header */
 header {
-    background-color: white;
+    background-color: #1F2039;
     padding: 20px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
-
 header nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
 }
-
 header nav ul li {
     font-size: 1.2rem;
 }
-
 header nav ul li a {
     font-family: 'Manrope', sans-serif;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-weight: 600;
     transition: background-color 0.3s, border-radius 0.3s;
 }
-
 header nav ul li a:hover {
     background-color: #c8abc8;
     border-radius: 4px;
 }
-
 header nav ul li a:active {
     background-color: rgb(255, 255, 255);
     box-shadow: none;
@@ -76,14 +68,12 @@ header nav ul li a:active {
     margin: 0 auto;
     padding: 20px;
 }
-
 /* About Section */
 #about {
     margin-left: 20px;
     padding: 100px ;
     text-align: left;
 }
-
 #about img {
     float: right;
     border: 3px solid #A5B4FC;
@@ -101,7 +91,6 @@ header nav ul li a:active {
     margin-bottom: 30px;
     background-color: #1F2039;
 }
-
 /* Button */
 button {
     display: inline-block;
@@ -115,34 +104,28 @@ button {
     border-radius: 10px;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
-
 button:hover {
     background-color: #A672A6;
     box-shadow: 5px 5px 0px #000;
 }
-
 button:active {
     background-color: greenyellow;
     box-shadow: none;
     transform: translateY(4px);
 }
-
 /* About Me Section */
 #about-me {
     padding: 100px 20px;
 }
-
 #about-me h2 {
     font-size: 1.3rem;
     margin-bottom: 30px;
 }
-
 #about-me p {
     margin-left: 300px;
     padding: 20px;
     box-shadow: 3px 5px 0px #fff;
 }
-
 /* Reseau */
 .reseau {
     display: flex;
@@ -150,11 +133,9 @@ button:active {
     gap: 50px;
     margin-top: 20px;
 }
-
 .reseau img {
     transition: transform 0.3s;
 }
-
 .reseau img:hover {
     transform: scale(1.2);
 }
@@ -170,14 +151,10 @@ button:active {
     padding-left: 20px; /* Ajout d'un peu de padding à gauche pour garder de l'espace */
     padding-right: 20px;
 }
-
 #competences h2 {
     text-align: center;
     margin-bottom: 80px;
 }
-
-
-
 #competences h3 {
     text-transform: uppercase;
     text-align: left;
@@ -185,7 +162,6 @@ button:active {
     color: #A5B4FC;
     
 }
-
 #competences .competence-columns {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -193,13 +169,10 @@ button:active {
     justify-items: center; /* Centre le contenu des colonnes */
     text-align: center; /* Centre également le texte à l'intérieur des colonnes */
 }
-
-
 #competences ul {
     list-style: none;
     padding: 0;
 }
-
 #competences li {
     margin-bottom: 20px;
 }
@@ -208,7 +181,6 @@ button:active {
     padding-top: 80px;
     padding-bottom: 80px;
 }
-
 /* Projects Section */
 #projets {
     margin-bottom: 100px;
@@ -218,18 +190,15 @@ button:active {
     flex-direction: column;
     min-height: 100vh;
 }
-
 #projets h2 {
     text-align: center;
     margin-bottom: 50px;
 }
-
 #projets h3 {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 20px;
 }
-
 /* Alignement et espacement des colonnes de projets */
 .project-columns {
     display: flex;
@@ -238,8 +207,6 @@ button:active {
     flex-wrap: wrap; /* S'assure que les colonnes s'ajustent sur les petits écrans */
     margin-bottom: 40px; /* Ajouter de l'espace en dessous des colonnes */
 }
-
-
 /* Cartes des projets avec taille réduite et couleur harmonisée */
 .project-card {
     background-color: #372d54; /* Couleur cohérente avec le background */
@@ -251,31 +218,24 @@ button:active {
     width: 220px; /* Taille réduite des cartes */
     margin-bottom: 50px;
 }
-
 .project-card:hover, .formation-card:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
 }
-
-
 .project-card img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
 }
-
-
 #formation{
     margin-bottom: 100px;
 }
-
 #formation h2 {
     text-align: center;
     margin-bottom: 50px;
 }
-
 /* Alignement des colonnes au centre */
 .formation-columns {
     display: flex;
@@ -283,14 +243,12 @@ button:active {
     align-items: flex-start;
     gap: 100px;
 }
-
 /* Les cartes de chaque section */
 .formation-category {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 /* Style pour chaque carte */
 .formation-card {
     background-color: #28084d;
@@ -300,33 +258,26 @@ button:active {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
-
-
-
 /* Contact Section */
 #contact {
     background-color: #1F2039;
     padding: 50px;
 }
-
 #contact h2 {
     text-align: center;
     margin-top: 80px;
 }
-
 #contact form {
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-top: 30px;
 }
-
 #contact input, #contact textarea {
     padding: 10px;
     border-radius: 5px;
     border: none;
 }
-
 #contact button {
     background-color: #A5B4FC;
     border-radius: 10px;
@@ -335,7 +286,6 @@ button:active {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
 #contact button:hover {
     background-color: #A672A6;
 }
@@ -345,52 +295,43 @@ footer {
     padding: 30px 0;
     text-align: center;
 }
-
 footer .social-links {
     display: flex;
     justify-content: center;
     gap: 30px;
     margin-bottom: 20px;
 }
-
 footer .social-links img {
     width: 24px;
     height: 24px;
     transition: transform 0.3s ease;
 }
-
 footer .social-links img:hover {
     transform: scale(1.2);
 }
-
 footer p {
     color: #A5B4FC;
     font-size: 1rem;
 }
-
 /* Section Titles */
 h1, h2, h3 {
     color: #FFFFFF;
     text-align: center;
     margin-bottom: 20px;
 }
-
 /* Veille Technologique Section */
 #veille-techno {
     background-color: #28293D;
     padding: 100px 20px;
 }
-
 #veille-techno h2 {
     margin-bottom: 50px;
 }
-
 #veille-techno .veille-columns {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
 }
-
 #veille-techno .veille-columns > div {
     flex: 1;
     background-color: #1F2039;
@@ -399,7 +340,6 @@ h1, h2, h3 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 #veille-techno .veille-columns > div:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -408,7 +348,6 @@ h1, h2, h3 {
 .full-text.hidden {
     display: none;
 }
-
 /* Optionnel : style du bouton */
 .toggle-btn {
     background-color: #1F2039;
@@ -420,13 +359,10 @@ h1, h2, h3 {
     transition: background-color 0.3s ease;
     margin-top: 10px;
 }
-
 .toggle-btn:hover {
     background-color: #372d54;
 }
-
 /* Contact Form */
-
 iframe {
     filter: brightness(0.95) contrast(0.9) saturate(0.85);
     border-radius: 10px;
@@ -436,46 +372,35 @@ iframe {
 iframe{
     width: 100px;
 }
-
-
-
 footer {
     background-color: #1F2039;
     padding: 40px 0;
     color: #fff;
     text-align: center;
 }
-
 footer .social-links a {
     margin: 0 15px;
     display: inline-block;
 }
-
 footer .social-links img {
     width: 24px;
     height: 24px;
 }
-
 footer .contact-info, .legal-links, .footer-nav, .credits {
     margin-top: 20px;
 }
-
 footer .legal-links a, footer .footer-nav a {
     color: #A5B4FC;
     text-decoration: none;
     margin: 0 10px;
 }
-
 footer .legal-links a:hover, footer .footer-nav a:hover {
     text-decoration: underline;
 }
-
 footer .credits {
     font-size: 0.9rem;
     margin-top: 30px;
 }
-
-
 /* Animations */
 @keyframes fadeIn {
     from {
@@ -487,66 +412,155 @@ footer .credits {
         transform: translateY(0);
     }
 }
-
 .fade-in {
     animation: fadeIn 1s ease-in-out;
 }
-
 /* Responsive Design */
 @media (max-width: 768px) {
     header nav ul {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 768px;
+        margin: 0 auto;
+        transition: all 0.3s ease; /* Ajoute une transition fluide */
     }
 
     header nav ul li {
         margin-bottom: 10px;
+        transition: transform 0.2s ease, background-color 0.3s ease; /* Animation sur les éléments du menu */
+    }
+
+    header nav ul li:hover {
+        transform: translateY(-3px); /* Légère élévation au survol */
+        background-color: rgba(106, 90, 205, 0.1); /* Change légèrement la couleur de fond */
     }
 
     #about img {
         float: none;
         margin: 0 auto 20px;
         display: block;
+        max-width: 100%; /* Empêche l'image de dépasser la largeur du conteneur */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation fluide sur l'image */
+    }
+
+    #about img:hover {
+        transform: scale(1.05); /* Légère mise en avant de l'image au survol */
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Ajoute une ombre autour de l'image */
     }
 
     #about-me p {
+       
         margin-left: 0;
+        margin-right: 0;
+        margin: 0 auto; /* Centre horizontalement */
+        text-align: center;
         box-shadow: none;
         padding: 10px;
+        transition: color 0.3s ease; /* Transition douce pour la couleur du texte */
     }
 
-    #formation .formation-columns {
-        flex-direction: column;
-        gap: 30px; /* Augmenter l'écart entre les colonnes sur mobile */
+    #about-me p:hover {
+        color: #6a5acd; /* Change la couleur du texte au survol */
     }
-
-    #projets .project-columns {
-        flex-direction: column;
-        gap: 40px; /* Ajoutez plus d'espace entre les projets sur mobile */
+    #dynamic-text-container {
+        display: flex;
+        justify-content: center; /* Centre horizontalement */
+        text-align: center; /* Centre le texte à l'intérieur */
     }
+    
+    #dynamic-text-container p {
+        margin: 0 auto;
+        padding: 10px;
+    }
+    
 
+    #formation .formation-columns,
+    #projets .project-columns,
     #veille-techno .veille-columns {
+        display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 30px;
+        align-items: center; /* Assure que les colonnes sont bien centrées */
+        justify-content: center;
+        width: 100%;
+        transition: transform 0.3s ease; /* Ajoute une transition fluide */
+    }
+
+    .block:hover {
+        transform: translateY(-5px); /* Soulève légèrement les blocs */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour un effet de profondeur */
     }
 
     .button {
-        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto; /* Centre horizontalement */
         text-align: center;
-        margin-top: 20px; /* Ajuster l'espacement pour les petits écrans */
+        background-color: #A5B4FC;
+    color: #FFFFFF;
+    border: 2px solid #000;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+
+    }
+
+    .button:hover {
+        background-color: #483d8b; /* Change la couleur du bouton au survol */
+        transform: scale(1.05); /* Agrandit légèrement le bouton au survol */
+    }
+
+    .button:active {
+        transform: scale(0.95); /* Réduction légère au clic pour simuler l'effet de pression */
+        background-color: #7b68ee;
     }
 
     #contact form {
         padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 768px;
+        margin: 0 auto;
+        transition: box-shadow 0.3s ease; /* Transition pour ajouter un effet visuel au formulaire */
     }
-    
-    #contact input, #contact textarea {
+
+    #contact form:hover {
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Ajoute une ombre légère au survol du formulaire */
+    }
+
+    #contact input,
+    #contact textarea {
         width: 100%; /* Assurez-vous que les champs remplissent tout l'espace disponible sur mobile */
+        margin: 0 auto; /* Centre les champs sur leur conteneur */
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transition fluide sur les champs de formulaire */
     }
-}
-@media (max-width: 768px) {
+
+    #contact input:focus,
+    #contact textarea:focus {
+        border-color: #6a5acd; /* Change la couleur de la bordure au focus */
+        box-shadow: 0px 4px 15px rgba(106, 90, 205, 0.2); /* Ajoute une ombre autour du champ lorsqu'il est sélectionné */
+    }
+
     #competences .competence-columns {
-        grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
+        display: grid;
+        grid-template-columns: 1fr; /* Une seule colonne */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         gap: 20px;
+        justify-content: center; /* Centre les compétences */
+        transition: transform 0.3s ease; /* Animation sur les colonnes de compétences */
+    }
+
+    #competences .competence-columns:hover {
+        transform: scale(1.02); /* Légère mise en avant des compétences au survol */
     }
 }
