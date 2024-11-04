@@ -21,10 +21,11 @@ header nav ul {
     display: flex;
     gap: 30px;
 }
-header nav ul li {
-    font-size: 1.2rem;
-}
+
+
 header nav ul li a {
+    
+
     font-family: 'Manrope', sans-serif;
     text-decoration: none;
     color: #ffffff;
@@ -32,7 +33,9 @@ header nav ul li a {
     transition: background-color 0.3s, border-radius 0.3s;
 }
 header nav ul li a:hover {
+    
     background-color: #c8abc8;
+
     border-radius: 4px;
 }
 header nav ul li a:active {
@@ -79,7 +82,7 @@ header nav ul li a:active {
     border: 3px solid #A5B4FC;
     border-radius: 50%;
     box-shadow: 12px 12px 2px rgba(249, 247, 250, 0.2);
-    margin-left: 20px;
+    margin-left: 30px;
 }
 #dynamic-text{
     text-align: left;
@@ -97,7 +100,6 @@ button {
     padding: 10px 20px;
     font-weight: bold;
     margin-bottom: 80px;
-    
     background-color: #A5B4FC;
     color: #FFFFFF;
     border: 2px solid #000;
@@ -417,18 +419,10 @@ footer .credits {
 }
 /* Responsive Design */
 @media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        max-width: 768px;
-        margin: 0 auto;
-        transition: all 0.3s ease; /* Ajoute une transition fluide */
-    }
+  
 
     header nav ul li {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         transition: transform 0.2s ease, background-color 0.3s ease; /* Animation sur les éléments du menu */
     }
 
@@ -438,18 +432,19 @@ footer .credits {
     }
 
     #about img {
-        float: none;
-        margin: 0 auto 20px;
-        display: block;
-        max-width: 100%; /* Empêche l'image de dépasser la largeur du conteneur */
-        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation fluide sur l'image */
+        display: none;
+        
     }
 
-    #about img:hover {
-        transform: scale(1.05); /* Légère mise en avant de l'image au survol */
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Ajoute une ombre autour de l'image */
+   
+    header nav {
+       position: absolute;
+      
+      
     }
-
+    h1 {
+        font-size: 4rem;
+      }
     #about-me p {
        
         margin-left: 0;
@@ -470,10 +465,7 @@ footer .credits {
         text-align: center; /* Centre le texte à l'intérieur */
     }
     
-    #dynamic-text-container p {
-        margin: 0 auto;
-        padding: 10px;
-    }
+    
     
 
     #formation .formation-columns,
@@ -500,10 +492,10 @@ footer .credits {
         margin: 20px auto; /* Centre horizontalement */
         text-align: center;
         background-color: #A5B4FC;
-    color: #FFFFFF;
-    border: 2px solid #000;
-    border-radius: 10px;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        color: #FFFFFF;
+        border: 2px solid #000;
+        border-radius: 10px;
+        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 
     }
 
