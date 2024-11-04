@@ -459,11 +459,12 @@ footer .credits {
     #about-me p:hover {
         color: #6a5acd; /* Change la couleur du texte au survol */
     }
-    #dynamic-text-container {
-        display: flex;
-        justify-content: center; /* Centre horizontalement */
-        text-align: center; /* Centre le texte à l'intérieur */
+    #dynamic-text {
+        font-size: 1.2rem; /* Ajuste cette valeur selon la taille de l'écran */
+        white-space: nowrap; /* Empêche le texte de se diviser en plusieurs lignes */
     }
+
+   
     
     
     
